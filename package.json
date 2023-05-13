@@ -1,0 +1,53 @@
+{
+  "name": "@bit-sun/plugin-request",
+  "version": "0.0.1",
+  "description": "Integrate umi-request deeply to umi.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/umijs/plugin-request"
+  },
+  "homepage": "https://github.com/umijs/plugin-request",
+  "authors": [
+    "chenjsh <chenjsh36@outlook.com>"
+  ],
+  "bugs": {
+    "url": "https://github.com/umijs/plugin-request/issues"
+  },
+  "peerDependencies": {
+    "react": "^16.0.0",
+    "umi": "2.x",
+    "antd": "^3.0.0"
+  },
+  "main": "lib/index.js",
+  "scripts": {
+    "build": "father-build",
+    "test": "umi-test --coverage",
+    "debug": "umi-test",
+    "prepublishOnly": "npm run build && np --no-cleanup --yolo --no-publish"
+  },
+  "devDependencies": {
+    "@testing-library/react-hooks": "^3.2.1",
+    "@types/jest": "^24.0.23",
+    "@types/node": "^12.12.11",
+    "create-test-server": "^3.0.1",
+    "father-build": "^1.15.0",
+    "np": "^5.2.1",
+    "react": "^16.12.0",
+    "umi-plugin-react": "^1.15.0",
+    "umi-request": "^1.2.14",
+    "umi-test": "^1.3.3",
+    "umi-types": "^0.5.7"
+  },
+  "files": [
+    "lib",
+    "src"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "dependencies": {
+    "@ahooksjs/use-request": "^2.0.0",
+    "umi-request": "^1.2.14"
+  }
+}
